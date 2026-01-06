@@ -307,6 +307,10 @@ img{max-width:100%; display:block; border-radius:10px}
   background:rgba(255,255,255,0.04);
   border:1px solid rgba(255,255,255,0.1);
   color:#e8eaed;
+  padding:1rem 1.2rem;
+  border-radius:14px;
+  margin:0 auto 1.2rem;
+  max-width:940px;
 }
 .sr-footer-t2qn .sr-notice-box-q7lt p{color:#c3c4c7}
 
@@ -388,8 +392,8 @@ img{max-width:100%; display:block; border-radius:10px}
     <div class="sr-container-g1j0">
       <div class="sr-game-card">
         <div class="sr-game-header">
-          <h1 class="sr-section-title-c6ur text-center">Neon Spin</h1>
-          <p class="sr-section-sub-a3ms text-center">Free-to-play social casino slot. No real-money gambling, prizes, or withdrawals — just bright spins for fun.</p>
+          <h1 class="sr-section-title-c6ur text-center">Red Spin</h1>
+          <p class="sr-section-sub-a3ms text-center">Free-to-play browser slot. No real-money gambling, prizes, or withdrawals — just bright spins for fun.</p>
         </div>
 
         <div class="sr-scoreboard">
@@ -398,9 +402,9 @@ img{max-width:100%; display:block; border-radius:10px}
         </div>
 
         <div class="sr-slot-window" aria-live="polite">
-          <div class="sr-reel" id="reel1">🍒</div>
-          <div class="sr-reel" id="reel2">⭐</div>
-          <div class="sr-reel" id="reel3">🔔</div>
+          <div class="sr-reel" id="reel1">🎮</div>
+          <div class="sr-reel" id="reel2">👾</div>
+          <div class="sr-reel" id="reel3">💎</div>
         </div>
 
         <div class="sr-controls">
@@ -415,11 +419,12 @@ img{max-width:100%; display:block; border-radius:10px}
 
         <p id="gameStatus" class="sr-game-status" aria-live="polite">Ready to spin.</p>
         <ul class="sr-payouts">
-          <li>777 pays 10x</li>
-          <li>🔔🔔🔔 pays 6x</li>
-          <li>⭐⭐⭐ pays 4x</li>
-          <li>🍒🍒🍒 pays 3x</li>
-          <li>Any two of a kind returns 2x</li>
+          <li>💎💎💎 wins 10x</li>
+          <li>🎯🎯🎯 wins 6x</li>
+          <li>⚡⚡⚡ wins 4x</li>
+          <li>🎮🎮🎮 wins 3x</li>
+          <li>👾👾👾 pays 2x</li>
+          <li>Two of a kind 2x</li>
         </ul>
       </div>
     </div>
@@ -432,6 +437,10 @@ img{max-width:100%; display:block; border-radius:10px}
     <div class="sr-footer-brand-m5lw">
       <img class="sr-logo-w3uk" src="../assets/img.png" alt="suomitopgames logo">
       <span class="sr-screen-reader-i2jx">suomitopgames</span>
+    </div>
+
+    <div class="sr-notice-box-q7lt">
+      <p>suomitopgames.games is an entertainment platform built for relaxation, with a wide range of games. It is not a gambling site and does not provide any betting services. suomitop20.games is intended for users aged 18 and over and is designed to be a safe, enjoyable environment. See our <a href="/terms-and-conditions">Terms of Use</a>.</p>
     </div>
 
     <ul class="sr-footer-links-r0fs">
@@ -468,8 +477,8 @@ img{max-width:100%; display:block; border-radius:10px}
 
     // Starting state: light-touch credits to make spins feel lively but contained.
     let credits = 1000;
-    const symbols = ["🍒", "🍋", "⭐", "🔔", "7"];
-    const payouts = { "7": 10, "🔔": 6, "⭐": 4, "🍒": 3, "🍋": 2 };
+    const symbols = ["🎮", "👾", "💎", "⚡", "🎯"];
+    const payouts = { "💎": 10, "🎯": 6, "⚡": 4, "🎮": 3, "👾": 2 };
 
     const formatNumber = (n) => n.toLocaleString();
 

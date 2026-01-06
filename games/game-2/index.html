@@ -41,6 +41,14 @@
     }
     h1{margin:0 0 0.2rem; font-size:1.5rem}
     p{margin:0.25rem 0; color:var(--muted)}
+    .notice{
+      margin-top:0.8rem;
+      font-size:0.85rem;
+      line-height:1.5;
+      color:var(--muted);
+    }
+    .notice a{color:var(--accent)}
+    .notice a:hover{color:var(--accent-2)}
     .grid{
       display:grid;
       grid-template-columns:repeat(4, 1fr);
@@ -84,6 +92,7 @@
     <div class="grid" id="tileGrid"></div>
     <p id="status">Waiting for a tap...</p>
     <button class="cta" id="shuffle">Shuffle colors</button>
+    <p class="notice">suomitopgames.games is an entertainment platform built for relaxation, with a wide range of games. It is not a gambling site and does not provide any betting services. suomitop20.games is intended for users aged 18 and over and is designed to be a safe, enjoyable environment. See our <a href="/terms-and-conditions">Terms of Use</a>.</p>
   </div>
 
   <script>

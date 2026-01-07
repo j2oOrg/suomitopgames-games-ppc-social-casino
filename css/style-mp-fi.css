@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans';
+  font-family: 'Roboto Mono';
 }
 
 html {
@@ -173,7 +173,7 @@ body #content #main-custom {
 
 #main-custom .listed-bonus-reviews-sec .section-header, #main-custom .listed-bonus-reviews-sec .section-description {
     color: #fff;
-    font-family: "Rubik One", sans-serif;
+    font-family: "Roboto Mono", sans-serif;
 }
 
 #main-custom .listed-bonus-reviews-sec .section-header .icon {
@@ -351,7 +351,7 @@ body #content #main-custom {
 #main-custom .listed-bonus-reviews-sec section.game-review_custom-fields .content-wrapper .review-star-rating-wraper span.title {
     color: #000;
     font-weight: 700;
-    font-family: "Rubik One", sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     font-size: 28px;
     line-height: 1.1;
     letter-spacing: 0.em;
@@ -610,3 +610,4 @@ footer .bga .plusplus {
   height: 44px;
   margin: 4px;
 }
+

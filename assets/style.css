@@ -9,8 +9,8 @@
   --accent-2: #70f0c7;
   --border: rgba(255,255,255,0.12);
   --radius: 14px;
-  --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
-  --font-body: "Poppins", "Inter", system-ui, sans-serif;
+  --font-heading: "Roboto Mono", monospace;
+  --font-body: "Roboto Mono", monospace;
   --shadow: 0 24px 70px rgba(0,0,0,0.5);
 }
 
@@ -553,3 +553,4 @@ img{max-width:100%; display:block}
   .hero-cta{flex-direction:column}
   .brand-logo{width:114px}
 }
+

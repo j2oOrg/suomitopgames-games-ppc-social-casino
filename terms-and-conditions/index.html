@@ -33,7 +33,7 @@
 }
 
 *{box-sizing:border-box}
-body.sr-shell-p5xk{
+body.page-shell{
   margin:0;
   font-family:var(--font-body);
   background:
@@ -47,23 +47,23 @@ body.sr-shell-p5xk{
 }
 a{color:var(--accent-2); text-decoration:none; transition:color .18s, opacity .18s}
 a:hover{color:var(--accent); opacity:0.9}
-.link-accent-z0rn{color:var(--accent); font-weight:700}
-.link-accent-z0rn:hover{color:var(--accent-2)}
+.link-accent{color:var(--accent); font-weight:700}
+.link-accent:hover{color:var(--accent-2)}
 img{max-width:100%; display:block}
 
-.sr-container-g1j0{width:min(1180px, 100% - 2.5rem); margin:0 auto}
+.site-container{width:min(1180px, 100% - 2.5rem); margin:0 auto}
 
-.sr-section-features-k5yb{
+.feature-section{
   padding:3.8rem 0;
   background:rgba(255,255,255,0.55);
 }
-.sr-grid-feat-r1nk{
+.feature-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
   gap:1.1rem;
   margin-top:1.8rem;
 }
-.sr-card-feat-u6pw{
+.feature-card{
   background:linear-gradient(140deg, rgba(255,255,255,0.7), rgba(201,121,59,0.08));
   border:1px solid var(--border);
   padding:1.5rem;
@@ -72,19 +72,19 @@ img{max-width:100%; display:block}
   transition:transform .16s, box-shadow .16s, border-color .16s;
   box-shadow:var(--shadow);
 }
-.sr-card-feat-u6pw:hover{transform:translateY(-4px); box-shadow:0 20px 50px rgba(141,93,50,0.22); border-color:rgba(201,121,59,0.5)}
-.sr-icon-feat-m8rd{font-size:1.9rem; color:var(--accent); margin-bottom:0.45rem}
-.sr-card-feat-u6pw h4{margin:0 0 0.4rem; font-family:var(--font-heading)}
-.sr-card-feat-u6pw p{margin:0; color:var(--muted)}
+.feature-card:hover{transform:translateY(-4px); box-shadow:0 20px 50px rgba(141,93,50,0.22); border-color:rgba(201,121,59,0.5)}
+.feature-icon{font-size:1.9rem; color:var(--accent); margin-bottom:0.45rem}
+.feature-card h4{margin:0 0 0.4rem; font-family:var(--font-heading)}
+.feature-card p{margin:0; color:var(--muted)}
 
-.sr-section-about-d8tc{padding:3.9rem 0}
-.sr-grid-about-d3ye{
+.about-section{padding:3.9rem 0}
+.about-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:1.9rem;
   align-items:center;
 }
-.sr-about-visual-l0rx{
+.about-visual{
   background:linear-gradient(155deg, rgba(201,121,59,0.12), rgba(227,168,107,0.16));
   border:1px solid var(--border);
   border-radius:18px;
@@ -93,20 +93,20 @@ img{max-width:100%; display:block}
   box-shadow:var(--shadow);
   overflow:hidden;
 }
-.sr-about-visual-l0rx img{border-radius:14px; box-shadow:0 18px 40px rgba(141,93,50,0.24)}
-.sr-about-copy-y6mn p{color:var(--muted); margin:0 0 0.85rem}
-.sr-about-copy-y6mn .sr-btn-prim-b7ce{margin-top:0.5rem}
+.about-visual img{border-radius:14px; box-shadow:0 18px 40px rgba(141,93,50,0.24)}
+.about-content p{color:var(--muted); margin:0 0 0.85rem}
+.about-content .site-btn-primary{margin-top:0.5rem}
 
-.sr-section-contact-b9te{
+.contact-section{
   background:rgba(255,255,255,0.55);
   padding:4rem 0;
 }
-.sr-grid-contact-l2np{
+.contact-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:1.8rem;
 }
-.sr-contact-box-h5qm{
+.contact-card{
   background:linear-gradient(150deg, rgba(255,255,255,0.75), rgba(201,121,59,0.08));
   border:1px solid var(--border);
   border-radius:14px;
@@ -114,9 +114,9 @@ img{max-width:100%; display:block}
   color:var(--text);
   box-shadow:var(--shadow);
 }
-.sr-contact-box-h5qm p{margin:0.2rem 0; color:var(--muted)}
-.sr-contact-box-h5qm strong{color:var(--text)}
-.sr-contact-form-q3zv{
+.contact-card p{margin:0.2rem 0; color:var(--muted)}
+.contact-card strong{color:var(--text)}
+.contact-form{
   background:var(--panel);
   border:1px solid var(--border);
   border-radius:14px;
@@ -126,7 +126,7 @@ img{max-width:100%; display:block}
   gap:1rem;
   box-shadow:var(--shadow);
 }
-.sr-field-n1uz{
+.form-field{
   width:100%;
   padding:0.85rem 1rem;
   border-radius:11px;
@@ -136,22 +136,22 @@ img{max-width:100%; display:block}
   font-size:1rem;
   transition:border .16s, box-shadow .16s;
 }
-.sr-field-n1uz:focus{
+.form-field:focus{
   outline:none;
   border-color:var(--accent-2);
   box-shadow:0 0 0 3px rgba(201,121,59,0.2);
 }
-.sr-status-x0jp{
+.form-status{
   min-height:20px;
   color:var(--muted);
 }
-.sr-status-x0jp.success{color:#9af7c9}
-.sr-status-x0jp.error{color:var(--accent)}
+.form-status.success{color:#9af7c9}
+.form-status.error{color:var(--accent)}
 
-.sr-section-notice-m8cz{
+.notice-section{
   padding:3.6rem 0;
 }
-.sr-notice-box-q7lt{
+.notice-box{
   max-width:940px;
   margin:0 auto;
   background:var(--panel);
@@ -161,13 +161,13 @@ img{max-width:100%; display:block}
   text-align:center;
   box-shadow:var(--shadow);
 }
-.sr-notice-title-s4ye{
+.notice-title{
   color:var(--heading);
   margin:0 0 0.45rem;
   font-family:var(--font-heading);
 }
-.sr-notice-box-q7lt p{color:var(--muted); margin:0 0 1rem}
-.sr-notice-btn-p7zo{
+.notice-box p{color:var(--muted); margin:0 0 1rem}
+.notice-button{
   background:var(--accent);
   color:#1e1811;
   padding:0.7rem 1.4rem;
@@ -176,30 +176,30 @@ img{max-width:100%; display:block}
   display:inline-block;
   border:1px solid transparent;
 }
-.sr-notice-btn-p7zo:hover{background:var(--accent-2); color:#1e1811}
+.notice-button:hover{background:var(--accent-2); color:#1e1811}
 
-.sr-section-reviews-p1av{
+.reviews-section{
   padding:3.8rem 0;
   text-align:center;
 }
-.sr-grid-rev-h4up{
+.review-grid{
   max-width:940px;
   margin:0 auto;
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
   gap:1.1rem;
 }
-.sr-card-rev-q2bv{
+.review-card{
   background:linear-gradient(150deg, rgba(255,255,255,0.7), rgba(201,121,59,0.08));
   border:1px solid var(--border);
   padding:1.2rem;
   border-radius:14px;
   box-shadow:var(--shadow);
 }
-.sr-quote-i8sm{font-style:italic; color:var(--text); margin:0 0 0.65rem}
-.sr-author-t9bz{color:var(--accent); font-weight:700; margin:0}
+.review-quote{font-style:italic; color:var(--text); margin:0 0 0.65rem}
+.review-author{color:var(--accent); font-weight:700; margin:0}
 
-.sr-footer-t2qn{
+.site-footer{
   background:rgba(245,236,223,0.96);
   color:var(--text);
   text-align:center;
@@ -208,22 +208,22 @@ img{max-width:100%; display:block}
   position:relative;
   overflow:hidden;
 }
-.sr-footer-t2qn::before{
+.site-footer::before{
   content:"";
   position:absolute;
   inset:0;
   background:radial-gradient(circle at 50% 18%, rgba(201,121,59,0.12), transparent 68%);
   z-index:0;
 }
-.sr-footer-t2qn .sr-container-g1j0{position:relative; z-index:1}
-.sr-footer-brand-m5lw{
+.site-footer .site-container{position:relative; z-index:1}
+.footer-brand{
   display:flex;
   align-items:center;
   justify-content:center;
   gap:0.8rem;
   margin-bottom:1rem;
 }
-.sr-footer-links-r0fs{
+.footer-links{
   display:flex;
   justify-content:center;
   gap:0.9rem;
@@ -232,14 +232,14 @@ img{max-width:100%; display:block}
   margin:0 0 1rem;
   list-style:none;
 }
-.sr-footer-links-r0fs a{
+.footer-links a{
   color:var(--heading);
   font-weight:600;
 }
-.sr-footer-links-r0fs a:hover{color:var(--accent)}
-.sr-copy-w9nj{color:var(--muted); margin:0}
+.footer-links a:hover{color:var(--accent)}
+.footer-copy{color:var(--muted); margin:0}
 
-.sr-scroll-top-y0ke{
+.scroll-top{
   position:fixed;
   right:22px;
   bottom:22px;
@@ -259,10 +259,10 @@ img{max-width:100%; display:block}
   transition:all .16s;
   z-index:90;
 }
-.sr-scroll-top-y0ke.show{opacity:1; visibility:visible}
-.sr-scroll-top-y0ke:hover{background:var(--accent-2)}
+.scroll-top.show{opacity:1; visibility:visible}
+.scroll-top:hover{background:var(--accent-2)}
 
-.sr-screen-reader-i2jx{
+.screen-reader-only{
   position:absolute;
   width:1px;
   height:1px;
@@ -274,112 +274,112 @@ img{max-width:100%; display:block}
 }
 
 @media (max-width: 992px){
-  .sr-grid-about-d3ye,
-  .sr-grid-contact-l2np{
+  .about-grid,
+  .contact-grid{
     grid-template-columns:1fr;
   }
-  .sr-hero-title-w4qm{font-size:2.5rem}
+  .hero-title{font-size:2.5rem}
 }
 @media (max-width: 768px){
-  .sr-hero-title-w4qm{font-size:2.1rem}
-  .sr-nav-a9ht{padding:0.7rem 0}
-  .sr-logo-w3uk{width:110px}
+  .hero-title{font-size:2.1rem}
+  .site-nav{padding:0.7rem 0}
+  .site-logo{width:110px}
 }
 @media (max-width: 576px){
-  .sr-hero-cta-k7eq{flex-direction:column}
-  .sr-logo-w3uk{width:104px}
+  .hero-actions{flex-direction:column}
+  .site-logo{width:104px}
 }
 
   </style>
 </head>
-<body class="sr-shell-p5xk">
+<body class="page-shell">
 </div>
 
-<nav class="navbar navbar-expand-lg sr-nav-a9ht">
-  <div class="sr-container-g1j0 d-flex align-items-center justify-content-between">
-    <a class="navbar-brand sr-brand-b4lm" href="/">
-      <img class="sr-logo-w3uk" src="../assets/img.png" alt="suomitopgames logo">
-      <span class="sr-screen-reader-i2jx">suomitopgames</span>
+<nav class="navbar navbar-expand-lg site-nav">
+  <div class="site-container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand site-brand" href="/">
+      <img class="site-logo" src="../assets/img.png" alt="suomitopgames logo">
+      <span class="screen-reader-only">suomitopgames</span>
     </a>
-    <button class="navbar-toggler navbar-toggler-x0c2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon navbar-toggler-icon-d3g0"><i class="fas fas-w5m1 fa-bars fa-bars-u5d3"></i></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navMenu">
       <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
-        <li class="nav-item"><a class="nav-link sr-nav-link-m0ck" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link sr-nav-link-m0ck" href="/play">Play</a></li>
-        <li class="nav-item"><a class="nav-link sr-nav-link-m0ck" href="/#contact">Contact</a></li>
-        <li class="nav-item"><a class="nav-link sr-nav-link-m0ck" href="/disclaimer">Disclaimer</a></li>
-        <li class="nav-item"><a class="nav-link sr-nav-link-m0ck" href="/privacy-policy">Privacy</a></li>
-        <li class="nav-item"><a class="nav-link sr-nav-link-m0ck active" href="/terms-and-conditions">Terms</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="/play">Play</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="/#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="/disclaimer">Disclaimer</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link" href="/privacy-policy">Privacy</a></li>
+        <li class="nav-item"><a class="nav-link site-nav-link active" href="/terms-and-conditions">Terms</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<section id="terms-and-conditions" class="sr-legal-wrap-d9qf">
-  <div class="sr-container-g1j0">
-    <h2 class="sr-section-title-c6ur">Terms &amp; Conditions</h2>
+<section id="terms-and-conditions" class="legal-section">
+  <div class="site-container">
+    <h2 class="section-title">Terms &amp; Conditions</h2>
 
-    <h3 class="sr-subheading-r7em">1. Who may use this site</h3>
+    <h3 class="legal-subheading">1. Who may use this site</h3>
     <p>
       suomitopgames is intended for adults 18+ only. By accessing the site, you confirm you meet this requirement and accept these
       Terms &amp; Conditions.
     </p>
 
-    <h3 class="sr-subheading-r7em">2. Purpose of the site</h3>
+    <h3 class="legal-subheading">2. Purpose of the site</h3>
     <p>
       The site provides free-to-play, social casino style experiences for entertainment and campaign previews. There are no wagers,
       deposits, prizes, or cash equivalents.
     </p>
 
-    <h3 class="sr-subheading-r7em">3. Acceptable use</h3>
+    <h3 class="legal-subheading">3. Acceptable use</h3>
     <p>
       Use the site lawfully and respectfully. Do not tamper with code, attempt unauthorized access, scrape data, or misrepresent the
       brand. Disabling age affirmation or bypassing safety measures is prohibited.
     </p>
 
-    <h3 class="sr-subheading-r7em">4. Content ownership</h3>
+    <h3 class="legal-subheading">4. Content ownership</h3>
     <p>
       All original designs, text, and visuals on <strong>suomitopgames</strong> are protected by copyright and other rights. You may
       not reuse, copy, or modify them without written consent.
     </p>
 
-    <h3 class="sr-subheading-r7em">5. Availability and changes</h3>
+    <h3 class="legal-subheading">5. Availability and changes</h3>
     <p>
       Uptime and performance may vary. We may modify or remove content, features, or access at any time. Continued use after updates
       indicates acceptance of the latest version.
     </p>
 
-    <h3 class="sr-subheading-r7em">6. External links</h3>
+    <h3 class="legal-subheading">6. External links</h3>
     <p>
       External links are provided for context. We do not control or endorse external content and are not responsible for its accuracy,
       availability, or safety.
     </p>
 
-    <h3 class="sr-subheading-r7em">7. Liability</h3>
+    <h3 class="legal-subheading">7. Liability</h3>
     <p>
       <strong>suomitopgames</strong> is provided “as-is” without warranties. We are not liable for direct, indirect, incidental, or
       consequential damages arising from use or inability to use the site.
     </p>
 
-    <h3 class="sr-subheading-r7em">8. Contact</h3>
+    <h3 class="legal-subheading">8. Contact</h3>
     <p>
-      Questions about these terms can be sent to <a href="mailto:hello@suomitopgames.games" class="link-accent-z0rn">hello@suomitopgames.games</a>.
+      Questions about these terms can be sent to <a href="mailto:hello@suomitopgames.games" class="link-accent">hello@suomitopgames.games</a>.
     </p>
   </div>
 </section>
 
-<footer class="sr-footer-t2qn">
-  <div class="sr-container-g1j0">
-    <div class="sr-footer-brand-m5lw">
-      <img class="sr-logo-w3uk" src="../assets/img.png" alt="suomitopgames logo">
-      <span class="sr-screen-reader-i2jx">suomitopgames</span>
+<footer class="site-footer">
+  <div class="site-container">
+    <div class="footer-brand">
+      <img class="site-logo" src="../assets/img.png" alt="suomitopgames logo">
+      <span class="screen-reader-only">suomitopgames</span>
     </div>
 
-    <div class="sr-notice-box-q7lt">
-      <h5 class="sr-notice-title-s4ye">Responsible play notice</h5>
+    <div class="notice-box">
+      <h5 class="notice-title">Responsible play notice</h5>
       <p>
         <strong>suomitopgames</strong> provides free-to-play, social casino style digital experiences for adults aged
         <strong>18+</strong>. There are no monetary incentives or rewards. Please engage responsibly, keep sessions short, and take
@@ -390,7 +390,7 @@ img{max-width:100%; display:block}
       </p>
     </div>
 
-    <ul class="sr-footer-links-r0fs">
+    <ul class="footer-links">
       <li><a href="/">Home</a></li>
       <li><a href="/play">Play</a></li>
       <li><a href="/#contact">Contact</a></li>
@@ -399,15 +399,16 @@ img{max-width:100%; display:block}
       <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
     </ul>
 
-    <p class="sr-copy-w9nj">© <span data-year></span> suomitopgames</p>
+    <p class="footer-copy">© <span data-year></span> suomitopgames</p>
   </div>
 </footer>
 
-<button id="hubScrollTop" class="sr-scroll-top-y0ke" aria-label="Scroll to top">
-  <i class="fas fas-w5m1 fa-chevron-up fa-chevron-up-f3i5"></i>
+<button id="hubScrollTop" class="scroll-top" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
 </button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/main.js" defer></script>
 </body>
 </html>
+

@@ -11,61 +11,61 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <style>
 :root{
-  --bg: #f7f1e5;
-  --bg-2: #f0e4d3;
-  --surface: #fff9f0;
-  --surface-strong: #f4e7d5;
-  --ink: #2c241b;
-  --muted: #6f6252;
-  --heading: #1e1811;
-  --accent: #c9793b;
-  --accent-2: #e3a86b;
-  --accent-warm: #d9a441;
-  --accent-red: #b8654a;
-  --border: #e1d4c2;
-  --radius: 16px;
-  --font-heading: "Sora", "Manrope", system-ui, sans-serif;
-  --font-body: "Manrope", system-ui, sans-serif;
-  --shadow: 0 20px 60px rgba(141,93,50,0.18);
-  --shadow-soft: 0 14px 34px rgba(90,60,30,0.16);
+  --bg: #f8f2e8;
+  --bg-2: #efe2d4;
+  --surface: #fffaf2;
+  --surface-2: #fef1e1;
+  --ink: #231b14;
+  --muted: #6b5f53;
+  --heading: #15110c;
+  --accent: #f07d3c;
+  --accent-2: #f4b661;
+  --accent-teal: #1f9a8a;
+  --accent-ink: #0f1a1e;
+  --border: rgba(35,27,20,0.14);
+  --radius: 18px;
+  --shadow: 0 24px 70px rgba(119,74,35,0.22);
+  --shadow-soft: 0 16px 40px rgba(86,55,30,0.18);
+  --font-heading: "Space Grotesk", "DM Sans", sans-serif;
+  --font-body: "DM Sans", "Space Grotesk", sans-serif;
 }
 
 *{box-sizing:border-box}
-body.sr-shell-p5xk{
+body{
   margin:0;
   font-family:var(--font-body);
   background:
-    radial-gradient(circle at 14% 18%, rgba(201,121,59,0.12), transparent 40%),
-    radial-gradient(circle at 86% 12%, rgba(227,168,107,0.12), transparent 42%),
-    radial-gradient(circle at 30% 82%, rgba(217,164,65,0.14), transparent 40%),
-    linear-gradient(140deg, var(--bg), var(--bg-2));
+    radial-gradient(circle at 12% 16%, rgba(240,125,60,0.12), transparent 42%),
+    radial-gradient(circle at 84% 12%, rgba(31,154,138,0.14), transparent 40%),
+    radial-gradient(circle at 20% 82%, rgba(244,182,97,0.12), transparent 40%),
+    linear-gradient(135deg, var(--bg), var(--bg-2));
   color:var(--ink);
   line-height:1.7;
   min-height:100vh;
   -webkit-font-smoothing:antialiased;
 }
-a{color:var(--accent); text-decoration:none; transition:color .18s, opacity .18s}
-a:hover{color:var(--accent-red); opacity:0.92}
+a{color:var(--accent-teal); text-decoration:none; transition:color .18s, opacity .18s}
+a:hover{color:var(--accent); opacity:0.92}
 .link-accent-z0rn{color:var(--accent); font-weight:700}
-.link-accent-z0rn:hover{color:var(--accent-red)}
-img{max-width:100%; display:block; border-radius:8px}
+.link-accent-z0rn:hover{color:var(--accent-teal)}
+img{max-width:100%; display:block; border-radius:14px}
 
 .sr-container-g1j0{width:min(1200px, 100% - 2.6rem); margin:0 auto}
 
 .sr-nav-a9ht{
-  background:rgba(255,248,236,0.92);
+  background:rgba(255,248,236,0.9);
   border-bottom:1px solid var(--border);
-  box-shadow:0 12px 30px rgba(141,93,50,0.18);
+  box-shadow:0 12px 30px rgba(114,74,40,0.16);
   backdrop-filter:blur(12px);
   position:sticky;
   top:0;
   z-index:60;
-  padding:0.95rem 0;
+  padding:0.9rem 0;
 }
 .sr-brand-b4lm{
   display:flex;
@@ -75,23 +75,23 @@ img{max-width:100%; display:block; border-radius:8px}
   text-decoration:none;
 }
 .sr-logo-w3uk{
-  width:132px;
+  width:130px;
   height:auto;
   display:block;
   border-radius:14px;
-  box-shadow:0 10px 24px rgba(141,93,50,0.18);
+  box-shadow:0 12px 26px rgba(119,74,35,0.2);
 }
 .sr-nav-link-m0ck{
   color:var(--heading);
-  font-weight:700;
-  margin:0 0.3rem;
-  padding:0.45rem 0.9rem;
+  font-weight:600;
+  margin:0 0.25rem;
+  padding:0.45rem 0.85rem;
   border-radius:12px;
   transition:background .15s, color .15s, transform .15s;
 }
 .sr-nav-link-m0ck:hover,
 .sr-nav-link-m0ck.active{
-  background:linear-gradient(90deg, rgba(201,121,59,0.16), rgba(227,168,107,0.18));
+  background:rgba(240,125,60,0.12);
   color:var(--heading);
   transform:translateY(-1px);
 }
@@ -103,7 +103,7 @@ img{max-width:100%; display:block; border-radius:8px}
   border:1px solid var(--border);
   color:var(--heading);
 }
-.navbar-toggler:focus{box-shadow:0 0 0 3px rgba(201,121,59,0.18)}
+.navbar-toggler:focus{box-shadow:0 0 0 3px rgba(240,125,60,0.18)}
 
 .sr-btn-prim-b7ce,
 .sr-btn-ghost-e1rt{
@@ -111,7 +111,7 @@ img{max-width:100%; display:block; border-radius:8px}
   align-items:center;
   justify-content:center;
   gap:0.4rem;
-  padding:0.9rem 1.8rem;
+  padding:0.9rem 1.7rem;
   border-radius:14px;
   font-weight:700;
   border:1px solid transparent;
@@ -120,43 +120,43 @@ img{max-width:100%; display:block; border-radius:8px}
   text-decoration:none;
 }
 .sr-btn-prim-b7ce{
-    background:linear-gradient(120deg, var(--accent), var(--accent-2));
-    color:#1e1811;
-    border-color:rgba(201,121,59,0.4);
-    box-shadow:0 16px 44px rgba(141,93,50,0.24);
-  }
+  background:linear-gradient(120deg, var(--accent), var(--accent-2));
+  color:var(--accent-ink);
+  border-color:rgba(240,125,60,0.4);
+  box-shadow:0 16px 44px rgba(114,74,40,0.24);
+}
 .sr-btn-prim-b7ce:hover{
-    transform:translateY(-2px);
-    box-shadow:0 18px 50px rgba(141,93,50,0.28);
-    color:#1e1811;
-  }
+  transform:translateY(-2px);
+  box-shadow:0 18px 50px rgba(114,74,40,0.28);
+  color:var(--accent-ink);
+}
 .sr-btn-ghost-e1rt{
-  background:var(--surface);
+  background:rgba(255,255,255,0.7);
   border-color:var(--border);
   color:var(--ink);
-  box-shadow:0 12px 28px rgba(141,93,50,0.16);
+  box-shadow:0 10px 24px rgba(60,40,20,0.14);
 }
-.sr-btn-ghost-e1rt:hover{color:var(--accent); border-color:rgba(201,121,59,0.5)}
+.sr-btn-ghost-e1rt:hover{color:var(--accent); border-color:rgba(240,125,60,0.5)}
 
 .sr-eyebrow-d7pc{
   text-transform:uppercase;
   letter-spacing:2.4px;
-  font-size:0.82rem;
+  font-size:0.8rem;
   color:var(--muted);
-  margin:0 0 0.35rem;
+  margin:0 0 0.4rem;
 }
 .sr-section-title-c6ur{
   font-family:var(--font-heading);
   color:var(--heading);
-  font-size:2.35rem;
-  margin:0 0 0.55rem;
-  letter-spacing:-0.3px;
+  font-size:clamp(2rem, 3.2vw, 2.7rem);
+  margin:0 0 0.6rem;
+  letter-spacing:-0.4px;
 }
 .sr-section-sub-a3ms{margin:0 0 1.1rem; color:var(--muted); max-width:720px}
 
 .sr-hero-c3ne{
   position:relative;
-  padding:clamp(3.2rem, 6vw, 5.4rem) 0;
+  padding:clamp(3.2rem, 6vw, 5.6rem) 0;
   overflow:hidden;
 }
 .sr-hero-c3ne::before,
@@ -169,20 +169,16 @@ img{max-width:100%; display:block; border-radius:8px}
   opacity:0.6;
   z-index:0;
 }
-.sr-hero-c3ne::before{top:-140px; left:-120px; background:radial-gradient(circle, rgba(201,121,59,0.22), transparent 64%)}
-.sr-hero-c3ne::after{bottom:-200px; right:-120px; background:radial-gradient(circle, rgba(227,168,107,0.24), transparent 62%)}
+.sr-hero-c3ne::before{top:-140px; left:-120px; background:radial-gradient(circle, rgba(240,125,60,0.25), transparent 64%)}
+.sr-hero-c3ne::after{bottom:-200px; right:-120px; background:radial-gradient(circle, rgba(31,154,138,0.22), transparent 62%)}
 .sr-hero-inner-w1sn{
   position:relative;
   z-index:1;
-  display:grid;
-  gap:1.8rem;
-  text-align:center;
   background:var(--surface);
   border:1px solid var(--border);
-  padding:clamp(2rem, 5vw, 3rem);
-  border-radius:calc(var(--radius) + 4px);
-  box-shadow:0 18px 52px rgba(141,93,50,0.2);
-  overflow:hidden;
+  padding:clamp(2rem, 5vw, 3.4rem);
+  border-radius:calc(var(--radius) + 6px);
+  box-shadow:var(--shadow);
 }
 .sr-hero-inner-w1sn::before{
   content:"";
@@ -191,30 +187,37 @@ img{max-width:100%; display:block; border-radius:8px}
   left:0;
   width:100%;
   height:6px;
-  background:linear-gradient(90deg, #c9793b 0%, #e3a86b 33%, #d9a441 66%, #b8654a 100%);
+  background:linear-gradient(90deg, #f07d3c 0%, #f4b661 33%, #1f9a8a 66%, #f07d3c 100%);
 }
+.sr-hero-grid-x9qv{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:2.6rem;
+  align-items:center;
+}
+.sr-hero-copy-v4kw{text-align:left}
 .sr-hero-title-w4qm{
   font-family:var(--font-heading);
-  font-size:3rem;
-  line-height:1.08;
-  margin:0 0 0.65rem;
+  font-size:clamp(2.4rem, 4vw, 3.4rem);
+  line-height:1.06;
+  margin:0 0 0.8rem;
   color:var(--heading);
 }
 .sr-hero-sub-j2fe{
   color:var(--muted);
-  margin:0 auto;
-  max-width:860px;
-  font-size:1.04rem;
+  margin:0 0 1.4rem;
+  max-width:560px;
+  font-size:1.02rem;
 }
-.sr-hero-cta-k7eq{display:flex; justify-content:center; gap:0.9rem; flex-wrap:wrap; margin-top:0.8rem}
+.sr-hero-cta-k7eq{display:flex; gap:0.9rem; flex-wrap:wrap}
 .sr-hero-badges-f4an{
   display:flex;
-  justify-content:center;
-  gap:0.65rem;
+  gap:0.6rem;
   flex-wrap:wrap;
+  margin-top:1.2rem;
 }
 .sr-pill-w3ah{
-  background:var(--surface);
+  background:rgba(255,255,255,0.8);
   color:var(--ink);
   padding:0.45rem 0.9rem;
   border-radius:999px;
@@ -227,64 +230,135 @@ img{max-width:100%; display:block; border-radius:8px}
   gap:0.4rem;
 }
 .sr-pill-w3ah.sr-pill-accent-s9ne{
-  border-color:rgba(26,115,232,0.35);
+  border-color:rgba(31,154,138,0.35);
+  color:var(--accent-teal);
+  background:linear-gradient(120deg, rgba(31,154,138,0.12), rgba(244,182,97,0.12));
+  box-shadow:0 12px 26px rgba(31,154,138,0.18);
+}
+.sr-hero-visual-b2x1{position:relative}
+.sr-hero-panel-s8ad{
+  background:linear-gradient(160deg, rgba(240,125,60,0.08), rgba(31,154,138,0.1));
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:1.6rem;
+  box-shadow:var(--shadow-soft);
+}
+.sr-hero-cards-c1fd{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:1rem;
+}
+.sr-hero-card-l2ms{
+  background:rgba(255,255,255,0.88);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:1rem;
+  display:flex;
+  gap:0.75rem;
+  align-items:flex-start;
+  min-height:110px;
+}
+.sr-hero-card-icon-j4qx{
+  width:40px;
+  height:40px;
+  border-radius:12px;
+  background:rgba(240,125,60,0.16);
   color:var(--accent);
-  background:linear-gradient(120deg, rgba(26,115,232,0.08), rgba(52,168,83,0.08));
-  box-shadow:0 12px 26px rgba(26,115,232,0.14);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.1rem;
+  flex-shrink:0;
+}
+.sr-hero-card-title{
+  margin:0;
+  font-weight:700;
+  color:var(--heading);
+  font-family:var(--font-heading);
+  font-size:1rem;
+}
+.sr-hero-card-copy{
+  margin:0.25rem 0 0;
+  color:var(--muted);
+  font-size:0.92rem;
+}
+.sr-hero-ticker-h7as{
+  margin-top:1.1rem;
+  padding:0.75rem 0.9rem;
+  border-radius:12px;
+  background:rgba(35,27,20,0.05);
+  border:1px dashed rgba(35,27,20,0.18);
+  font-weight:600;
+  color:var(--muted);
 }
 
 .sr-section-features-k5yb{
-  padding:3.8rem 0;
-  background:linear-gradient(180deg, #0d1220 0%, #111a2c 100%);
-  color:#f4eee5;
+  padding:4.2rem 0;
+  background:linear-gradient(180deg, #fff7ef 0%, #f6ece0 100%);
+  position:relative;
 }
-.sr-section-features-k5yb .sr-section-title-c6ur{color:#f8f3eb}
-.sr-section-features-k5yb .sr-section-sub-a3ms{color:rgba(255,255,255,0.78)}
+.sr-section-features-k5yb::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(120deg, rgba(35,27,20,0.04), rgba(35,27,20,0.04) 1px, transparent 1px, transparent 16px);
+  opacity:0.6;
+}
+.sr-feature-grid-v3p8{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);
+  gap:2.4rem;
+  align-items:start;
+}
+.sr-feature-intro-n2bx{padding-right:1.2rem}
+.sr-feature-actions-t9ex{margin-top:1.4rem; display:flex; flex-wrap:wrap; gap:0.8rem}
 .sr-grid-feat-r1nk{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-  gap:1.1rem;
-  margin-top:1.8rem;
+  grid-template-columns:1fr;
+  gap:1rem;
 }
 .sr-card-feat-u6pw{
   background:var(--surface);
   border:1px solid var(--border);
-  padding:1.5rem;
+  padding:1.4rem 1.6rem;
   border-radius:var(--radius);
   color:var(--ink);
   transition:transform .16s, box-shadow .16s, border-color .16s;
   box-shadow:var(--shadow-soft);
-  position:relative;
-  overflow:hidden;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:1rem;
+  align-items:start;
 }
-.sr-card-feat-u6pw::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(135deg, rgba(90,209,255,0.08), rgba(255,126,219,0.06));
-  opacity:0;
-  transition:opacity .2s;
-  z-index:0;
+.sr-card-feat-u6pw:hover{transform:translateY(-4px); box-shadow:0 18px 46px rgba(90,60,30,0.22); border-color:rgba(240,125,60,0.4)}
+.sr-icon-feat-m8rd{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:rgba(31,154,138,0.12);
+  color:var(--accent-teal);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.25rem;
 }
-.sr-card-feat-u6pw:hover{transform:translateY(-4px); box-shadow:0 18px 46px rgba(90,209,255,0.22); border-color:rgba(90,209,255,0.5)}
-.sr-card-feat-u6pw:hover::after{opacity:1}
-.sr-card-feat-u6pw > *{position:relative; z-index:1}
-.sr-icon-feat-m8rd{font-size:1.9rem; color:var(--accent); margin-bottom:0.45rem}
-.sr-card-feat-u6pw h4{margin:0 0 0.4rem; font-family:var(--font-heading)}
+.sr-card-feat-u6pw h4{margin:0 0 0.35rem; font-family:var(--font-heading)}
 .sr-card-feat-u6pw p{margin:0; color:var(--muted)}
 
-.sr-section-about-d8tc{padding:3.9rem 0}
+.sr-section-about-d8tc{padding:4.2rem 0}
 .sr-grid-about-d3ye{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:1.9rem;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);
+  gap:2.2rem;
   align-items:center;
 }
 .sr-about-visual-l0rx{
-  background:linear-gradient(155deg, rgba(26,115,232,0.08), rgba(52,168,83,0.06));
+  background:linear-gradient(155deg, rgba(31,154,138,0.12), rgba(240,125,60,0.12));
   border:1px solid var(--border);
-  border-radius:18px;
-  padding:1.5rem;
+  border-radius:22px;
+  padding:1.4rem;
   position:relative;
   box-shadow:var(--shadow-soft);
   overflow:hidden;
@@ -292,38 +366,47 @@ img{max-width:100%; display:block; border-radius:8px}
 .sr-about-visual-l0rx::after{
   content:"";
   position:absolute;
-  inset:14px;
-  border-radius:14px;
-  border:1px dashed rgba(26,115,232,0.2);
+  inset:18px;
+  border-radius:16px;
+  border:1px dashed rgba(31,154,138,0.3);
 }
-.sr-about-visual-l0rx img{border-radius:14px; box-shadow:0 18px 40px rgba(32,33,36,0.16)}
+.sr-about-visual-l0rx img{border-radius:16px; box-shadow:0 18px 40px rgba(32,33,36,0.16)}
 .sr-about-copy-y6mn p{color:var(--muted); margin:0 0 0.85rem}
-.sr-about-copy-y6mn .sr-btn-prim-b7ce{margin-top:0.5rem}
+.sr-about-tags-k9le{display:flex; flex-wrap:wrap; gap:0.6rem; margin:1rem 0 1.4rem}
+.sr-tag-v4pz{
+  background:rgba(255,255,255,0.7);
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:0.35rem 0.85rem;
+  font-weight:600;
+  color:var(--muted);
+}
 
 .sr-section-contact-b9te{
-  background:linear-gradient(135deg, #0d1422 0%, #0f1a2c 100%);
-  padding:4rem 0;
+  background:linear-gradient(140deg, #fdf3e6 0%, #f3e7d6 100%);
+  padding:4.2rem 0;
 }
+.sr-contact-header-n9ss{max-width:740px; margin:0 auto 2rem; text-align:left}
 .sr-grid-contact-l2np{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:minmax(0,0.95fr) minmax(0,1.05fr);
   gap:1.8rem;
 }
 .sr-contact-box-h5qm{
   background:var(--surface);
   border:1px solid var(--border);
-  border-radius:14px;
-  padding:1.4rem;
+  border-radius:var(--radius);
+  padding:1.6rem;
   color:var(--ink);
   box-shadow:var(--shadow-soft);
 }
-.sr-contact-box-h5qm p{margin:0.2rem 0; color:var(--muted)}
+.sr-contact-box-h5qm p{margin:0.25rem 0; color:var(--muted)}
 .sr-contact-box-h5qm strong{color:var(--heading)}
 .sr-contact-form-q3zv{
   background:var(--surface);
   border:1px solid var(--border);
-  border-radius:14px;
-  padding:1.3rem;
+  border-radius:var(--radius);
+  padding:1.5rem;
   display:flex;
   flex-direction:column;
   gap:1rem;
@@ -332,7 +415,7 @@ img{max-width:100%; display:block; border-radius:8px}
 .sr-field-n1uz{
   width:100%;
   padding:0.9rem 1rem;
-  border-radius:11px;
+  border-radius:12px;
   border:1px solid var(--border);
   background:#ffffff;
   color:var(--ink);
@@ -342,7 +425,7 @@ img{max-width:100%; display:block; border-radius:8px}
 .sr-field-n1uz:focus{
   outline:none;
   border-color:var(--accent);
-  box-shadow:0 0 0 3px rgba(26,115,232,0.2);
+  box-shadow:0 0 0 3px rgba(240,125,60,0.2);
 }
 .sr-status-x0jp,
 .form-status{
@@ -351,13 +434,44 @@ img{max-width:100%; display:block; border-radius:8px}
   margin:0;
 }
 .sr-status-x0jp.success,
-.form-status.success{color:var(--accent-2)}
+.form-status.success{color:var(--accent-teal)}
 .sr-status-x0jp.error,
-.form-status.error{color:var(--accent-red)}
+.form-status.error{color:var(--accent)}
 
 .sr-section-notice-m8cz{
-  padding:3.6rem 0;
-  background:linear-gradient(180deg, #0d1422 0%, #0c111d 100%);
+  padding:3.8rem 0;
+  background:linear-gradient(160deg, #172a2f 0%, #14212c 100%);
+}
+.sr-notice-shell-q9pd{
+  max-width:980px;
+  margin:0 auto;
+  background:var(--surface);
+  border:1px solid var(--border);
+  padding:1.8rem;
+  border-radius:20px;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:1.4rem;
+  box-shadow:var(--shadow);
+  align-items:start;
+}
+.sr-notice-icon-p3te{
+  width:52px;
+  height:52px;
+  border-radius:16px;
+  background:rgba(31,154,138,0.18);
+  color:var(--accent-teal);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.4rem;
+}
+.sr-notice-body-r8ax{padding-top:0.1rem}
+.sr-notice-body-r8ax p{color:var(--muted); margin:0 0 1rem}
+.sr-notice-title-s4ye{
+  color:var(--heading);
+  margin:0 0 0.45rem;
+  font-family:var(--font-heading);
 }
 .sr-notice-box-q7lt{
   max-width:940px;
@@ -369,11 +483,6 @@ img{max-width:100%; display:block; border-radius:8px}
   text-align:center;
   box-shadow:var(--shadow-soft);
 }
-.sr-notice-title-s4ye{
-  color:var(--heading);
-  margin:0 0 0.45rem;
-  font-family:var(--font-heading);
-}
 .sr-notice-box-q7lt p{color:var(--muted); margin:0 0 1rem}
 .sr-notice-btn-p7zo{
   background:var(--accent);
@@ -382,38 +491,42 @@ img{max-width:100%; display:block; border-radius:8px}
   border-radius:999px;
   font-weight:700;
   display:inline-block;
-  border:1px solid rgba(26,115,232,0.4);
-  box-shadow:0 10px 24px rgba(26,115,232,0.2);
+  border:1px solid rgba(240,125,60,0.4);
+  box-shadow:0 10px 24px rgba(31,154,138,0.2);
 }
 .sr-notice-btn-p7zo:hover{background:var(--accent-2); color:#ffffff}
 
 .sr-section-reviews-p1av{
-  padding:3.8rem 0;
-  text-align:center;
-  background:linear-gradient(180deg, #0c111d 0%, #0d1322 100%);
+  padding:4rem 0;
+  background:linear-gradient(180deg, #f8efe3 0%, #f5e7d8 100%);
+}
+.sr-reviews-grid-s7pt{
+  display:grid;
+  grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);
+  gap:2rem;
+  align-items:start;
 }
 .sr-grid-rev-h4up{
-  max-width:940px;
-  margin:0 auto;
+  margin:0;
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
-  gap:1.1rem;
+  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+  gap:1rem;
 }
 .sr-card-rev-q2bv{
   background:var(--surface);
   border:1px solid var(--border);
-  padding:1.2rem;
-  border-radius:14px;
+  padding:1.3rem;
+  border-radius:16px;
   box-shadow:var(--shadow-soft);
 }
 .sr-quote-i8sm{font-style:italic; color:var(--ink); margin:0 0 0.65rem}
 .sr-author-t9bz{color:var(--accent); font-weight:700; margin:0}
 
 .sr-footer-t2qn{
-  background:#f2e6d6;
+  background:#f3e7d7;
   color:var(--ink);
   text-align:center;
-  padding:3rem 1rem 2.5rem;
+  padding:3.2rem 1rem 2.5rem;
   border-top:4px solid var(--accent);
   position:relative;
   overflow:hidden;
@@ -422,7 +535,7 @@ img{max-width:100%; display:block; border-radius:8px}
   content:"";
   position:absolute;
   inset:0;
-  background:radial-gradient(circle at 50% 18%, rgba(201,121,59,0.16), transparent 70%);
+  background:radial-gradient(circle at 50% 18%, rgba(240,125,60,0.18), transparent 70%);
   z-index:0;
 }
 .sr-footer-t2qn::after{
@@ -432,7 +545,7 @@ img{max-width:100%; display:block; border-radius:8px}
   left:0;
   height:4px;
   width:100%;
-  background:linear-gradient(90deg, #c9793b, #e3a86b, #d9a441, #b8654a);
+  background:linear-gradient(90deg, #f07d3c, #f4b661, #1f9a8a, #f07d3c);
   z-index:1;
 }
 .sr-footer-t2qn .sr-container-g1j0{position:relative; z-index:2}
@@ -459,7 +572,7 @@ img{max-width:100%; display:block; border-radius:8px}
 .sr-footer-links-r0fs a:hover{color:var(--accent)}
 .sr-copy-w9nj{color:var(--muted); margin:0}
 .sr-footer-t2qn .sr-notice-box-q7lt{
-  background:rgba(255,255,255,0.6);
+  background:rgba(255,255,255,0.7);
   border:1px solid var(--border);
   color:var(--ink);
 }
@@ -473,50 +586,79 @@ img{max-width:100%; display:block; border-radius:8px}
   height:46px;
   border-radius:50%;
   border:none;
-  background:linear-gradient(135deg, #c9793b, #e3a86b);
+  background:linear-gradient(135deg, #f07d3c, #f4b661);
   color:var(--heading);
   display:flex;
   align-items:center;
   justify-content:center;
   cursor:pointer;
-  box-shadow:0 14px 34px rgba(141,93,50,0.28);
+  box-shadow:0 14px 34px rgba(114,74,40,0.28);
   opacity:0;
   visibility:hidden;
   transition:all .16s;
   z-index:90;
 }
 .sr-scroll-top-y0ke.show{opacity:1; visibility:visible}
-.sr-scroll-top-y0ke:hover{background:linear-gradient(135deg, #e3a86b, #c9793b)}
-  
-  .sr-screen-reader-i2jx{
-    position:absolute;
-    width:1px;
-    height:1px;
-    padding:0;
-    margin:-1px;
-    overflow:hidden;
-    clip:rect(0,0,0,0);
-    border:0;
+.sr-scroll-top-y0ke:hover{background:linear-gradient(135deg, #f4b661, #f07d3c)}
+
+.sr-screen-reader-i2jx{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  border:0;
+}
+
+.sr-animate{
+  opacity:0;
+  transform:translateY(16px);
+  animation:sr-rise 0.8s ease forwards;
+  animation-delay:var(--delay, 0s);
+}
+@keyframes sr-rise{
+  to{opacity:1; transform:translateY(0);}
+}
+@media (prefers-reduced-motion: reduce){
+  .sr-animate{
+    animation:none;
+    opacity:1;
+    transform:none;
   }
+}
 
 @media (max-width: 992px){
+  .sr-hero-grid-x9qv,
+  .sr-feature-grid-v3p8,
   .sr-grid-about-d3ye,
-  .sr-grid-contact-l2np{
+  .sr-grid-contact-l2np,
+  .sr-reviews-grid-s7pt{
     grid-template-columns:1fr;
   }
   .sr-hero-inner-w1sn{padding:2rem}
+  .sr-hero-copy-v4kw{text-align:center}
+  .sr-hero-sub-j2fe{margin-left:auto; margin-right:auto}
+  .sr-hero-cta-k7eq{justify-content:center}
+  .sr-hero-badges-f4an{justify-content:center}
+  .sr-feature-intro-n2bx{padding-right:0}
+  .sr-contact-header-n9ss{text-align:center}
 }
 @media (max-width: 768px){
-  .sr-hero-title-w4qm{font-size:2.4rem}
   .sr-nav-a9ht{padding:0.75rem 0}
-  .sr-logo-w3uk{width:120px}
+  .sr-logo-w3uk{width:116px}
+  .sr-hero-cards-c1fd{grid-template-columns:1fr}
+  .sr-hero-card-l2ms{min-height:auto}
 }
 @media (max-width: 576px){
   .sr-hero-cta-k7eq{flex-direction:column}
-  .sr-logo-w3uk{width:110px}
+  .sr-logo-w3uk{width:108px}
   .sr-container-g1j0{width:min(1200px, 100% - 1.6rem)}
+  .sr-notice-shell-q9pd{grid-template-columns:1fr; text-align:left}
+  .sr-notice-icon-p3te{margin-bottom:0.5rem}
 }
-  </style>
+</style>
 </head>
 <body>
 
@@ -551,19 +693,59 @@ img{max-width:100%; display:block; border-radius:8px}
   <!-- HERO -->
   <section id="home" class="sr-hero-c3ne">
     <div class="sr-container-g1j0">
-      <div class="sr-hero-inner-w1sn text-center">
-        <p class="sr-eyebrow-d7pc" style="">Entertainment only - no cash, no prizes</p>
-        <h1 class="sr-hero-title-w4qm" style="">suomitopgames is a dynamic social arcade where bright visuals, quick sessions, and friendly competition make every visit feel electric.</h1>
-        <p class="sr-hero-sub-j2fe">
-          Instant access across mobile and desktop, with no deposits or prizes. The platform emphasizes clarity, polished visuals, and responsible 18+ entertainment.
-        </p>
-        <div class="sr-hero-cta-k7eq">
-          <a href="/play" class="sr-btn-prim-b7ce">Play now</a>
-        </div>
-        <div class="sr-hero-badges-f4an">
-          <span class="sr-pill-w3ah sr-pill-accent-s9ne"><i class="fa-solid fa-bolt"></i>Quick loading</span>
-          <span class="sr-pill-w3ah"><i class="fa-solid fa-shield"></i>18+ entertainment</span>
-          <span class="sr-pill-w3ah"><i class="fa-solid fa-mobile-screen"></i>Great on Mobile</span>
+      <div class="sr-hero-inner-w1sn">
+        <div class="sr-hero-grid-x9qv">
+          <div class="sr-hero-copy-v4kw sr-animate" style="--delay:0s;">
+            <p class="sr-eyebrow-d7pc">Entertainment only - no cash, no prizes</p>
+            <h1 class="sr-hero-title-w4qm">suomitopgames is a dynamic social arcade where bright visuals, quick sessions, and friendly competition make every visit feel electric.</h1>
+            <p class="sr-hero-sub-j2fe">
+              Instant access across mobile and desktop, with no deposits or prizes. The platform emphasizes clarity, polished visuals, and responsible 18+ entertainment.
+            </p>
+            <div class="sr-hero-cta-k7eq">
+              <a href="/play" class="sr-btn-prim-b7ce">Play now</a>
+              <a href="#disclaimer-block" class="sr-btn-ghost-e1rt">See safety note</a>
+            </div>
+            <div class="sr-hero-badges-f4an">
+              <span class="sr-pill-w3ah sr-pill-accent-s9ne"><i class="fa-solid fa-bolt"></i>Quick loading</span>
+              <span class="sr-pill-w3ah"><i class="fa-solid fa-shield"></i>18+ entertainment</span>
+              <span class="sr-pill-w3ah"><i class="fa-solid fa-mobile-screen"></i>Great on mobile</span>
+            </div>
+          </div>
+          <div class="sr-hero-visual-b2x1 sr-animate" style="--delay:0.12s;">
+            <div class="sr-hero-panel-s8ad">
+              <div class="sr-hero-cards-c1fd">
+                <div class="sr-hero-card-l2ms">
+                  <div class="sr-hero-card-icon-j4qx"><i class="fa-solid fa-bolt"></i></div>
+                  <div>
+                    <p class="sr-hero-card-title">Instant entry</p>
+                    <p class="sr-hero-card-copy">Load a round in seconds.</p>
+                  </div>
+                </div>
+                <div class="sr-hero-card-l2ms">
+                  <div class="sr-hero-card-icon-j4qx"><i class="fa-solid fa-layer-group"></i></div>
+                  <div>
+                    <p class="sr-hero-card-title">Clear layout</p>
+                    <p class="sr-hero-card-copy">Simple screens, quick decisions.</p>
+                  </div>
+                </div>
+                <div class="sr-hero-card-l2ms">
+                  <div class="sr-hero-card-icon-j4qx"><i class="fa-solid fa-ban"></i></div>
+                  <div>
+                    <p class="sr-hero-card-title">No cash play</p>
+                    <p class="sr-hero-card-copy">No deposits or prizes.</p>
+                  </div>
+                </div>
+                <div class="sr-hero-card-l2ms">
+                  <div class="sr-hero-card-icon-j4qx"><i class="fa-solid fa-user-shield"></i></div>
+                  <div>
+                    <p class="sr-hero-card-title">18+ focus</p>
+                    <p class="sr-hero-card-copy">Adult-only entertainment.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sr-hero-ticker-h7as">High-energy visuals | Instant entry | Clear play rules</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -571,24 +753,38 @@ img{max-width:100%; display:block; border-radius:8px}
 
   <!-- FEATURES -->
   <section id="features" class="sr-section-features-k5yb">
-    <div class="sr-container-g1j0 text-center">
-      <h2 class="sr-section-title-c6ur mb-1">Engineered for game flow</h2>
-      <p class="sr-section-sub-a3ms mx-auto">High-energy visuals, instant entry, and clear play rules keep each round focused and fast.</p>
-      <div class="sr-grid-feat-r1nk">
-        <div class="sr-card-feat-u6pw">
-          <i class="fa-solid fa-ghost sr-icon-feat-m8rd"></i>
-          <h4>Arcade-inspired visuals</h4>
-          <p>Neon gradients, bold contrast, and glowing accents echo the energy of fast-paced play.</p>
+    <div class="sr-container-g1j0">
+      <div class="sr-feature-grid-v3p8">
+        <div class="sr-feature-intro-n2bx sr-animate" style="--delay:0s;">
+          <p class="sr-eyebrow-d7pc">Built for momentum</p>
+          <h2 class="sr-section-title-c6ur">Engineered for game flow</h2>
+          <p class="sr-section-sub-a3ms">High-energy visuals, instant entry, and clear play rules keep each round focused and fast.</p>
+          <div class="sr-feature-actions-t9ex">
+            <a href="/play" class="sr-btn-prim-b7ce">Start a session</a>
+          </div>
         </div>
-        <div class="sr-card-feat-u6pw">
-          <i class="fa-solid fa-forward sr-icon-feat-m8rd"></i>
-          <h4>Fast start, fast loops</h4>
-          <p>Jump in quickly with lightweight pages that stay smooth on mobile and desktop.</p>
-        </div>
-        <div class="sr-card-feat-u6pw">
-          <i class="fa-solid fa-lock sr-icon-feat-m8rd"></i>
-          <h4>Clear play boundaries</h4>
-          <p>Clear 18+ guidance, simple disclaimers, and no-payment flows keep expectations transparent.</p>
+        <div class="sr-grid-feat-r1nk">
+          <article class="sr-card-feat-u6pw sr-animate" style="--delay:0.05s;">
+            <div class="sr-icon-feat-m8rd"><i class="fa-solid fa-ghost"></i></div>
+            <div>
+              <h4>Arcade-inspired visuals</h4>
+              <p>Neon gradients, bold contrast, and glowing accents echo the energy of fast-paced play.</p>
+            </div>
+          </article>
+          <article class="sr-card-feat-u6pw sr-animate" style="--delay:0.1s;">
+            <div class="sr-icon-feat-m8rd"><i class="fa-solid fa-forward"></i></div>
+            <div>
+              <h4>Fast start, fast loops</h4>
+              <p>Jump in quickly with lightweight pages that stay smooth on mobile and desktop.</p>
+            </div>
+          </article>
+          <article class="sr-card-feat-u6pw sr-animate" style="--delay:0.15s;">
+            <div class="sr-icon-feat-m8rd"><i class="fa-solid fa-lock"></i></div>
+            <div>
+              <h4>Clear play boundaries</h4>
+              <p>Clear 18+ guidance, simple disclaimers, and no-payment flows keep expectations transparent.</p>
+            </div>
+          </article>
         </div>
       </div>
     </div>
@@ -598,10 +794,8 @@ img{max-width:100%; display:block; border-radius:8px}
   <section id="about" class="sr-section-about-d8tc">
     <div class="sr-container-g1j0">
       <div class="sr-grid-about-d3ye">
-        <div class="sr-about-visual-l0rx">
-          <img src="assets/herobackground01.webp" alt="suomitopgames highlight collage">
-        </div>
-        <div class="sr-about-copy-y6mn">
+        <div class="sr-about-copy-y6mn sr-animate" style="--delay:0s;">
+          <p class="sr-eyebrow-d7pc">Experience focus</p>
           <h2 class="sr-section-title-c6ur">Clear, calm, and easy to enter</h2>
           <p>
             We shaped <strong>suomitopgames</strong> around clarity first. Navigation is simple, rules are easy to scan, and every screen keeps the experience focused and comfortable.
@@ -609,7 +803,15 @@ img{max-width:100%; display:block; border-radius:8px}
           <p>
             It is designed for quick, no-stress play: open the page, choose a game, and settle in without downloads, wallets, or extra steps.
           </p>
+          <div class="sr-about-tags-k9le">
+            <span class="sr-tag-v4pz">No downloads</span>
+            <span class="sr-tag-v4pz">Quick sessions</span>
+            <span class="sr-tag-v4pz">18+ focus</span>
+          </div>
           <a href="#contact" class="sr-btn-prim-b7ce">Talk with us</a>
+        </div>
+        <div class="sr-about-visual-l0rx sr-animate" style="--delay:0.12s;">
+          <img src="assets/herobackground01.webp" alt="suomitopgames highlight collage">
         </div>
       </div>
     </div>
@@ -618,11 +820,13 @@ img{max-width:100%; display:block; border-radius:8px}
   <!-- CONTACT -->
   <section id="contact" class="sr-section-contact-b9te">
     <div class="sr-container-g1j0">
-      <h2 class="sr-section-title-c6ur text-center mb-1">Contact</h2>
-      <p class="sr-section-sub-a3ms text-center mx-auto">Send feedback, ask about access, or request a tailored placement.</p>
+      <div class="sr-contact-header-n9ss">
+        <h2 class="sr-section-title-c6ur">Contact</h2>
+        <p class="sr-section-sub-a3ms">Send feedback, ask about access, or request a tailored placement.</p>
+      </div>
 
       <div class="sr-grid-contact-l2np">
-        <div class="sr-contact-box-h5qm">
+        <div class="sr-contact-box-h5qm sr-animate" style="--delay:0s;">
           <h4>Talk to us</h4>
           <p><strong>Support:</strong> <a href="mailto:hello@suomitopgames.games" class="link-accent-z0rn">hello@suomitopgames.games</a></p>
           <p><strong>Hours:</strong> Monday-Thursday, 10:00 - 6:00</p>
@@ -630,7 +834,7 @@ img{max-width:100%; display:block; border-radius:8px}
           <p><strong>Include:</strong> What you want to do and directional.</p>
         </div>
 
-        <form id="hubForm" class="sr-contact-form-q3zv" novalidate="">
+        <form id="hubForm" class="sr-contact-form-q3zv sr-animate" style="--delay:0.1s;" novalidate="">
           <input class="sr-field-n1uz" type="text" id="hubName" placeholder="Your name" required="" minlength="2" maxlength="60">
           <input class="sr-field-n1uz" type="email" id="hubEmail" placeholder="you@example.com" required="">
           <textarea class="sr-field-n1uz" id="hubMessage" rows="5" placeholder="Your message" required=""></textarea>
@@ -642,16 +846,17 @@ img{max-width:100%; display:block; border-radius:8px}
   </section>
 
   <!-- DISCLAIMER CARD -->
-  <section id="disclaimer-block" class="sr-section-notice-m8cz text-center" aria-labelledby="disclaimer-title">
+  <section id="disclaimer-block" class="sr-section-notice-m8cz" aria-labelledby="disclaimer-title">
     <div class="sr-container-g1j0">
-      <div class="sr-notice-box-q7lt mx-auto p-4">
-        <h2 id="disclaimer-title" class="sr-notice-title-s4ye">
-          <i class="fas fas-c9r9 fa-circle-exclamation fa-circle-exclamation-l6e8"></i> Responsible Gaming Reminder
-        </h2>
-        <p>
-          <strong>Attention:</strong> suomitopgames is a social casino created for entertainment purposes. This site offers <strong>no money-based features, deposits, or prizes</strong>. Access is intended for users aged <strong>18+</strong>. Take regular breaks and play responsibly.
-        </p>
-        <a href="/disclaimer" class="sr-notice-btn-p7zo">Read full disclaimer</a>
+      <div class="sr-notice-shell-q9pd sr-animate" style="--delay:0s;">
+        <div class="sr-notice-icon-p3te"><i class="fa-solid fa-circle-exclamation"></i></div>
+        <div class="sr-notice-body-r8ax">
+          <h2 id="disclaimer-title" class="sr-notice-title-s4ye">Responsible Gaming Reminder</h2>
+          <p>
+            <strong>Attention:</strong> suomitopgames is a social casino created for entertainment purposes. This site offers <strong>no money-based features, deposits, or prizes</strong>. Access is intended for users aged <strong>18+</strong>. Take regular breaks and play responsibly.
+          </p>
+          <a href="/disclaimer" class="sr-notice-btn-p7zo">Read full disclaimer</a>
+        </div>
       </div>
     </div>
   </section>
@@ -659,23 +864,29 @@ img{max-width:100%; display:block; border-radius:8px}
   <!-- REVIEWS -->
   <section id="reviews" class="sr-section-reviews-p1av">
     <div class="sr-container-g1j0">
-      <h2 class="sr-section-title-c6ur mb-1 text-center">Player thoughts</h2>
-      <div class="sr-grid-rev-h4up">
-        <div class="sr-card-rev-q2bv">
-          <p class="sr-quote-i8sm">"Fast to load and easy to jump into. The visuals pop without feeling cluttered."</p>
-          <h5 class="sr-author-t9bz">- Aino K.</h5>
+      <div class="sr-reviews-grid-s7pt">
+        <div class="sr-reviews-head-k3cq sr-animate" style="--delay:0s;">
+          <p class="sr-eyebrow-d7pc">Feedback</p>
+          <h2 class="sr-section-title-c6ur">Player thoughts</h2>
+          <p class="sr-section-sub-a3ms">Short notes from visitors who tried the flow.</p>
         </div>
-        <div class="sr-card-rev-q2bv">
-          <p class="sr-quote-i8sm">"Great for a quick break. It runs smooth on my phone and keeps the focus on play."</p>
-          <h5 class="sr-author-t9bz">- Juhani P.</h5>
-        </div>
-        <div class="sr-card-rev-q2bv">
-          <p class="sr-quote-i8sm">"The 18+ note is clear, and the sessions feel light and simple to follow."</p>
-          <h5 class="sr-author-t9bz">- Leena S.</h5>
-        </div>
-        <div class="sr-card-rev-q2bv">
-          <p class="sr-quote-i8sm">"Clean layout, fast spins, and no distractions. The flow feels consistent."</p>
-          <h5 class="sr-author-t9bz">- Oskari M.</h5>
+        <div class="sr-grid-rev-h4up">
+          <div class="sr-card-rev-q2bv sr-animate" style="--delay:0.05s;">
+            <p class="sr-quote-i8sm">"Fast to load and easy to jump into. The visuals pop without feeling cluttered."</p>
+            <h5 class="sr-author-t9bz">- Aino K.</h5>
+          </div>
+          <div class="sr-card-rev-q2bv sr-animate" style="--delay:0.1s;">
+            <p class="sr-quote-i8sm">"Great for a quick break. It runs smooth on my phone and keeps the focus on play."</p>
+            <h5 class="sr-author-t9bz">- Juhani P.</h5>
+          </div>
+          <div class="sr-card-rev-q2bv sr-animate" style="--delay:0.15s;">
+            <p class="sr-quote-i8sm">"The 18+ note is clear, and the sessions feel light and simple to follow."</p>
+            <h5 class="sr-author-t9bz">- Leena S.</h5>
+          </div>
+          <div class="sr-card-rev-q2bv sr-animate" style="--delay:0.2s;">
+            <p class="sr-quote-i8sm">"Clean layout, fast spins, and no distractions. The flow feels consistent."</p>
+            <h5 class="sr-author-t9bz">- Oskari M.</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -727,3 +938,4 @@ img{max-width:100%; display:block; border-radius:8px}
 
 </body>
 </html>
+

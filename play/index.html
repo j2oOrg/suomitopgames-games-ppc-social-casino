@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Play — suomitopgames</title>
-  <meta name="description" content="Play a simple, free-to-play social casino slot on suomitopgames. No real-money gambling or prizes. 18+ only.">
+  <meta name="description" content="Play a free-to-play social casino slot using virtual credits only. No cash value, wagering, or prizes. 18+ only.">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
@@ -393,12 +393,12 @@ img{max-width:100%; display:block; border-radius:10px}
       <div class="game-card">
         <div class="game-header">
           <h1 class="section-title text-center">Red Spin</h1>
-          <p class="section-subtitle text-center">Free-to-play browser slot. No real-money gambling, prizes, or withdrawals — just bright spins for fun.</p>
+          <p class="section-subtitle text-center">Free-to-play browser slot using virtual credits only. No cash value, no deposits, and no prizes — just bright spins for fun.</p>
         </div>
 
         <div class="scoreboard">
-          <div class="score-item">Credits<span id="creditsDisplay">1,000</span></div>
-          <div class="score-item">Bet per spin<span id="betDisplay">20</span></div>
+          <div class="score-item">Virtual credits<span id="creditsDisplay">1,000</span></div>
+          <div class="score-item">Credits per spin<span id="betDisplay">20</span></div>
         </div>
 
         <div class="slot-window" aria-live="polite">
@@ -409,22 +409,22 @@ img{max-width:100%; display:block; border-radius:10px}
 
         <div class="game-controls">
           <div class="bet-control">
-            <label for="betRange">Bet per spin (credits)</label>
-            <input type="range" id="betRange" min="10" max="100" step="10" value="20" aria-label="Bet per spin">
+            <label for="betRange">Credits per spin (virtual)</label>
+            <input type="range" id="betRange" min="10" max="100" step="10" value="20" aria-label="Credits per spin">
           </div>
           <button id="spinButton" class="site-btn-primary" type="button">
             <i class="fa-solid fa-rocket"></i> Spin
           </button>
         </div>
 
-        <p id="gameStatus" class="game-status" aria-live="polite">Ready to spin.</p>
+        <p id="gameStatus" class="game-status" aria-live="polite">Ready to spin. Virtual credits only.</p>
         <ul class="payout-list">
-          <li>💎💎💎 wins 10x</li>
-          <li>🎯🎯🎯 wins 6x</li>
-          <li>⚡⚡⚡ wins 4x</li>
-          <li>🎮🎮🎮 wins 3x</li>
-          <li>👾👾👾 pays 2x</li>
-          <li>Two of a kind 2x</li>
+          <li>💎💎💎 = 10x credits</li>
+          <li>🎯🎯🎯 = 6x credits</li>
+          <li>⚡⚡⚡ = 4x credits</li>
+          <li>🎮🎮🎮 = 3x credits</li>
+          <li>👾👾👾 = 2x credits</li>
+          <li>Two of a kind = 2x credits</li>
         </ul>
       </div>
     </div>
@@ -529,7 +529,7 @@ img{max-width:100%; display:block; border-radius:10px}
     const spin = () => {
       const bet = Number(betRange.value);
       if (bet > credits) {
-        statusEl.textContent = "Not enough credits — lower your bet.";
+        statusEl.textContent = "Not enough credits — lower your credits per spin.";
         return;
       }
 
@@ -553,9 +553,9 @@ img{max-width:100%; display:block; border-radius:10px}
         const win = calculateWin(result, bet);
         credits += win;
         const message = win > 0
-          ? `Win! You earned ${formatNumber(win)} credits.`
+          ? `Win! You earned ${formatNumber(win)} virtual credits.`
           : "No match this time. Try another spin.";
-        statusEl.textContent = `${message} (No real-money gambling or prizes.)`;
+        statusEl.textContent = `${message} Virtual credits only, no cash value.`;
         syncUI();
         spinButton.disabled = credits < bet ? true : false;
       }, 900);

@@ -36,3 +36,4 @@ spec:
       port: 80
       targetPort: 80
   loadBalancerIP: LOAD_BALANCER_IP_PLACEHOLDER
+

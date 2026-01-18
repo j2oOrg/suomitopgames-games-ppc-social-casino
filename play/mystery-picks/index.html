@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Play — suomitopgames</title>
-  <meta name="description" content="Browse our free-to-play social casino games. Virtual credits only—no cash value or prizes. 18+ (legal gambling age in Finland).">
+  <title>Mystery Picks — suomitopgames</title>
+  <meta name="description" content="Play Mystery Picks with virtual credits only—no cash value or prizes. 18+ (legal gambling age in Finland).">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,22 +132,23 @@ img{max-width:100%; display:block; border-radius:10px}
 }
 .section-subtitle{margin:0 0 1.1rem; color:var(--muted); max-width:720px}
 
-.play-section{
-  padding:3.6rem 0 4.2rem;
+.play-section{padding:3.6rem 0 4.2rem;}
+.play-header{text-align:center; margin-bottom:2rem;}
+.play-header .section-subtitle{margin-left:auto; margin-right:auto}
+.back-link{
+  display:inline-flex;
+  align-items:center;
+  gap:0.4rem;
+  font-weight:700;
+  color:var(--accent);
+  background:rgba(255,255,255,0.75);
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:0.3rem 0.85rem;
+  margin-bottom:1rem;
 }
-.play-header{
-  text-align:center;
-  margin-bottom:2.2rem;
-}
-.play-header .section-subtitle{
-  margin-left:auto;
-  margin-right:auto;
-}
-.game-gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:1.6rem;
-}
+.back-link:hover{color:var(--accent-2)}
+
 .game-card{
   background:var(--surface);
   border:1px solid var(--border);
@@ -158,34 +159,6 @@ img{max-width:100%; display:block; border-radius:10px}
   margin:0 auto;
   position:relative;
   overflow:hidden;
-}
-.game-card.preview{
-  max-width:100%;
-  margin:0;
-  text-align:center;
-}
-.game-card.preview .section-title{
-  font-size:1.7rem;
-}
-.game-card.preview .section-subtitle{
-  font-size:0.96rem;
-  margin-bottom:1rem;
-}
-.game-meta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:0.6rem;
-  justify-content:center;
-  margin-bottom:1.1rem;
-}
-.game-tag{
-  background:rgba(255,255,255,0.72);
-  border:1px solid var(--border);
-  border-radius:999px;
-  padding:0.35rem 0.75rem;
-  font-weight:700;
-  font-size:0.85rem;
-  color:var(--muted);
 }
 .game-card::before{
   content:"";
@@ -219,52 +192,6 @@ img{max-width:100%; display:block; border-radius:10px}
 }
 .score-item span{display:block; font-size:1.1rem; color:var(--heading)}
 
-.slot-window{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:0.65rem;
-  background:linear-gradient(120deg, rgba(201,121,59,0.16), rgba(227,168,107,0.16));
-  padding:1rem;
-  border-radius:14px;
-  border:1px solid var(--border);
-  box-shadow:0 18px 46px rgba(141,93,50,0.18) inset;
-}
-.slot-reel{
-  background:var(--surface-strong);
-  border:1px solid var(--border);
-  border-radius:12px;
-  min-height:120px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:2.8rem;
-  font-weight:800;
-  color:var(--heading);
-  box-shadow:0 12px 24px rgba(141,93,50,0.18);
-}
-.dice-window{
-  display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:0.8rem;
-  background:linear-gradient(120deg, rgba(201,121,59,0.14), rgba(227,168,107,0.14));
-  padding:1rem;
-  border-radius:14px;
-  border:1px solid var(--border);
-  box-shadow:0 18px 46px rgba(141,93,50,0.18) inset;
-}
-.dice-face{
-  background:var(--surface-strong);
-  border:1px solid var(--border);
-  border-radius:12px;
-  min-height:110px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:3rem;
-  font-weight:800;
-  color:var(--heading);
-  box-shadow:0 12px 24px rgba(141,93,50,0.18);
-}
 .pick-grid{
   display:grid;
   grid-template-columns:repeat(3, minmax(0,1fr));
@@ -461,19 +388,16 @@ img{max-width:100%; display:block; border-radius:10px}
 @media (max-width: 576px){
   .site-container{width:min(1180px, 100% - 1.6rem)}
   .site-logo{width:110px}
-  .slot-reel{min-height:90px; font-size:2.4rem}
-  .dice-face{min-height:90px; font-size:2.4rem}
   .pick-grid{grid-template-columns:repeat(2, minmax(0,1fr))}
 }
   </style>
 </head>
 <body class="page-shell">
 
-<!-- Header / navigation -->
 <nav class="navbar navbar-expand-lg site-nav">
   <div class="site-container d-flex align-items-center justify-content-between">
     <a class="navbar-brand site-brand" href="/">
-      <img class="site-logo" src="../assets/img.png" alt="suomitopgames logo">
+      <img class="site-logo" src="../../assets/img.png" alt="suomitopgames logo">
       <span class="screen-reader-only">suomitopgames</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -497,74 +421,53 @@ img{max-width:100%; display:block; border-radius:10px}
   <section class="play-section">
     <div class="site-container">
       <div class="play-header">
-        <h1 class="section-title text-center">Choose a game</h1>
-        <p class="section-subtitle text-center">Each game has its own page and its own virtual credits bank. No cash value or prizes. No in-app purchases.</p>
+        <a class="back-link" href="/play"><i class="fa-solid fa-arrow-left"></i> All games</a>
+        <h1 class="section-title text-center">Mystery Picks</h1>
+        <p class="section-subtitle text-center">Pick a crate to reveal a multiplier. Virtual credits only with no cash value or prizes. No in-app purchases.</p>
       </div>
 
-      <div class="game-gallery">
-        <article class="game-card preview">
-          <div class="game-header">
-            <h2 class="section-title text-center">Red Spin</h2>
-            <p class="section-subtitle text-center">Slot play with clear symbols and short rounds.</p>
-          </div>
-          <div class="game-meta">
-            <span class="game-tag">Slot</span>
-            <span class="game-tag">3 reels</span>
-            <span class="game-tag">Virtual credits</span>
-          </div>
-          <ul class="payout-list">
-            <li>Adjustable bets</li>
-            <li>Short spins</li>
-            <li>Short rounds</li>
-          </ul>
-          <a class="site-btn-primary" href="/play/red-spin">Play Red Spin</a>
-        </article>
+      <div class="game-card">
+        <div class="scoreboard">
+          <div class="score-item">Virtual credits<span id="pickCreditsDisplay">900</span></div>
+          <div class="score-item">Credits per pick<span id="pickBetDisplay">15</span></div>
+        </div>
 
-        <article class="game-card preview">
-          <div class="game-header">
-            <h2 class="section-title text-center">Aurora Dice</h2>
-            <p class="section-subtitle text-center">Roll for doubles and push for higher totals in short bursts.</p>
-          </div>
-          <div class="game-meta">
-            <span class="game-tag">Dice</span>
-            <span class="game-tag">Best of two</span>
-            <span class="game-tag">Virtual credits</span>
-          </div>
-          <ul class="payout-list">
-            <li>Doubles bonus</li>
-            <li>High-total wins</li>
-            <li>Short rolls</li>
-          </ul>
-          <a class="site-btn-primary" href="/play/aurora-dice">Play Aurora Dice</a>
-        </article>
+        <div class="pick-grid" id="pickGrid">
+          <button class="pick-card" type="button" aria-label="Mystery pick 1">❔</button>
+          <button class="pick-card" type="button" aria-label="Mystery pick 2">❔</button>
+          <button class="pick-card" type="button" aria-label="Mystery pick 3">❔</button>
+          <button class="pick-card" type="button" aria-label="Mystery pick 4">❔</button>
+          <button class="pick-card" type="button" aria-label="Mystery pick 5">❔</button>
+          <button class="pick-card" type="button" aria-label="Mystery pick 6">❔</button>
+        </div>
 
-        <article class="game-card preview">
-          <div class="game-header">
-            <h2 class="section-title text-center">Mystery Picks</h2>
-            <p class="section-subtitle text-center">Pick a crate and reveal a surprise multiplier.</p>
+        <div class="game-controls">
+          <div class="bet-control">
+            <label for="pickBetRange">Credits per pick (virtual)</label>
+            <input type="range" id="pickBetRange" min="10" max="80" step="5" value="15" aria-label="Credits per pick">
           </div>
-          <div class="game-meta">
-            <span class="game-tag">Pick &amp; reveal</span>
-            <span class="game-tag">1 tap</span>
-            <span class="game-tag">Virtual credits</span>
-          </div>
-          <ul class="payout-list">
-            <li>Hidden rewards</li>
-            <li>One pick per round</li>
-            <li>Clear results</li>
-          </ul>
-          <a class="site-btn-primary" href="/play/mystery-picks">Play Mystery Picks</a>
-        </article>
+          <button id="pickReset" class="site-btn-primary" type="button">
+            <i class="fa-solid fa-arrows-rotate"></i> New draw
+          </button>
+        </div>
+
+        <p id="pickStatus" class="game-status" aria-live="polite">Choose a crate to reveal a reward. Virtual credits only.</p>
+        <ul class="payout-list">
+          <li>👑 = 5x credits</li>
+          <li>🔥 = 3x credits</li>
+          <li>💠 = 2x credits</li>
+          <li>✨ = 1x credits</li>
+          <li>🌫️ = no win</li>
+        </ul>
       </div>
     </div>
   </section>
 </main>
 
-<!-- Footer -->
 <footer class="site-footer">
   <div class="site-container">
     <div class="footer-brand">
-      <img class="site-logo" src="../assets/img.png" alt="suomitopgames logo">
+      <img class="site-logo" src="../../assets/img.png" alt="suomitopgames logo">
       <span class="screen-reader-only">suomitopgames</span>
     </div>
 
@@ -591,12 +494,121 @@ img{max-width:100%; display:block; border-radius:10px}
 
 <!-- Bootstrap UI helpers -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Game logic: Mystery Picks (virtual credits only) -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Mystery Picks: virtual credits only, no cash value.
+    const pickCreditsDisplay = document.getElementById("pickCreditsDisplay");
+    const pickBetDisplay = document.getElementById("pickBetDisplay");
+    const pickBetRange = document.getElementById("pickBetRange");
+    const pickStatus = document.getElementById("pickStatus");
+    const pickReset = document.getElementById("pickReset");
+    const pickGrid = document.getElementById("pickGrid");
+
+    if (!pickCreditsDisplay || !pickBetDisplay || !pickBetRange || !pickStatus || !pickReset || !pickGrid) {
+      return;
+    }
+
+    // Local credit bank for this game only.
+    let pickCredits = 900;
+    let pickRoundActive = true;
+    let pickPrizes = [];
+    const pickCards = Array.from(pickGrid.querySelectorAll(".pick-card"));
+    const pickPrompt = "Choose a crate to reveal a reward. Virtual credits only.";
+    const pickPool = [
+      { multiplier: 0, icon: "🌫️" },
+      { multiplier: 0, icon: "🌫️" },
+      { multiplier: 1, icon: "✨" },
+      { multiplier: 2, icon: "💠" },
+      { multiplier: 3, icon: "🔥" },
+      { multiplier: 5, icon: "👑" },
+    ];
+
+    const formatNumber = (value) => value.toLocaleString();
+
+    // Shuffle the prize pool each round.
+    const shuffle = (list) => {
+      for (let i = list.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [list[i], list[j]] = [list[j], list[i]];
+      }
+      return list;
+    };
+
+    // Keep the UI in sync with credits and bet.
+    const syncPickUI = () => {
+      pickCreditsDisplay.textContent = formatNumber(pickCredits);
+      pickBetDisplay.textContent = pickBetRange.value;
+      const bet = Number(pickBetRange.value);
+      if (pickRoundActive) {
+        const disabled = pickCredits < bet;
+        pickCards.forEach((card) => { card.disabled = disabled; });
+        if (disabled) {
+          pickStatus.textContent = "Not enough credits — lower your credits per pick.";
+        } else if (pickStatus.textContent.includes("Not enough credits")) {
+          pickStatus.textContent = pickPrompt;
+        }
+      }
+    };
+
+    // Reset the grid for a new round.
+    const startPickRound = () => {
+      pickRoundActive = true;
+      pickPrizes = shuffle([...pickPool]);
+      pickCards.forEach((card, index) => {
+        card.textContent = "❔";
+        card.classList.remove("revealed", "selected", "win");
+        card.disabled = false;
+        card.dataset.index = index;
+      });
+      pickStatus.textContent = pickPrompt;
+      syncPickUI();
+    };
+
+    // One pick per round.
+    pickCards.forEach((card, index) => {
+      card.addEventListener("click", () => {
+        if (!pickRoundActive) return;
+        const bet = Number(pickBetRange.value);
+        if (bet > pickCredits) {
+          pickStatus.textContent = "Not enough credits — lower your credits per pick.";
+          return;
+        }
+
+        pickRoundActive = false;
+        pickCredits -= bet;
+        const prize = pickPrizes[index];
+        const win = bet * prize.multiplier;
+        pickCredits += win;
+
+        pickCards.forEach((btn, btnIndex) => {
+          const item = pickPrizes[btnIndex];
+          btn.textContent = item.icon;
+          btn.classList.add("revealed");
+          btn.disabled = true;
+          if (item.multiplier > 0) {
+            btn.classList.add("win");
+          }
+        });
+        card.classList.add("selected");
+
+        const message = win > 0
+          ? `Nice find! You earned ${formatNumber(win)} virtual credits.`
+          : "No win this time. Try a new draw.";
+        pickStatus.textContent = `${message} Virtual credits only.`;
+        syncPickUI();
+      });
+    });
+
+    pickBetRange.addEventListener("input", syncPickUI);
+    pickReset.addEventListener("click", startPickRound);
+    startPickRound();
+  });
+</script>
 <!-- Site utilities: scroll-to-top + footer year -->
-<script src="../assets/main.js" defer></script>
+<script src="../../assets/main.js" defer></script>
 </body>
 </html>
-
-
 
 
 

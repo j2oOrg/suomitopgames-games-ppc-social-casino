@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Play — suomitopgames</title>
-  <meta name="description" content="Browse our free-to-play social casino games. Virtual credits only—no cash value or prizes. 18+ (legal gambling age in Finland).">
+  <title>Aurora Dice — suomitopgames</title>
+  <meta name="description" content="Play Aurora Dice with virtual credits only—no cash value or prizes. 18+ (legal gambling age in Finland).">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,22 +132,23 @@ img{max-width:100%; display:block; border-radius:10px}
 }
 .section-subtitle{margin:0 0 1.1rem; color:var(--muted); max-width:720px}
 
-.play-section{
-  padding:3.6rem 0 4.2rem;
+.play-section{padding:3.6rem 0 4.2rem;}
+.play-header{text-align:center; margin-bottom:2rem;}
+.play-header .section-subtitle{margin-left:auto; margin-right:auto}
+.back-link{
+  display:inline-flex;
+  align-items:center;
+  gap:0.4rem;
+  font-weight:700;
+  color:var(--accent);
+  background:rgba(255,255,255,0.75);
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:0.3rem 0.85rem;
+  margin-bottom:1rem;
 }
-.play-header{
-  text-align:center;
-  margin-bottom:2.2rem;
-}
-.play-header .section-subtitle{
-  margin-left:auto;
-  margin-right:auto;
-}
-.game-gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:1.6rem;
-}
+.back-link:hover{color:var(--accent-2)}
+
 .game-card{
   background:var(--surface);
   border:1px solid var(--border);
@@ -158,34 +159,6 @@ img{max-width:100%; display:block; border-radius:10px}
   margin:0 auto;
   position:relative;
   overflow:hidden;
-}
-.game-card.preview{
-  max-width:100%;
-  margin:0;
-  text-align:center;
-}
-.game-card.preview .section-title{
-  font-size:1.7rem;
-}
-.game-card.preview .section-subtitle{
-  font-size:0.96rem;
-  margin-bottom:1rem;
-}
-.game-meta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:0.6rem;
-  justify-content:center;
-  margin-bottom:1.1rem;
-}
-.game-tag{
-  background:rgba(255,255,255,0.72);
-  border:1px solid var(--border);
-  border-radius:999px;
-  padding:0.35rem 0.75rem;
-  font-weight:700;
-  font-size:0.85rem;
-  color:var(--muted);
 }
 .game-card::before{
   content:"";
@@ -219,29 +192,6 @@ img{max-width:100%; display:block; border-radius:10px}
 }
 .score-item span{display:block; font-size:1.1rem; color:var(--heading)}
 
-.slot-window{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:0.65rem;
-  background:linear-gradient(120deg, rgba(201,121,59,0.16), rgba(227,168,107,0.16));
-  padding:1rem;
-  border-radius:14px;
-  border:1px solid var(--border);
-  box-shadow:0 18px 46px rgba(141,93,50,0.18) inset;
-}
-.slot-reel{
-  background:var(--surface-strong);
-  border:1px solid var(--border);
-  border-radius:12px;
-  min-height:120px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:2.8rem;
-  font-weight:800;
-  color:var(--heading);
-  box-shadow:0 12px 24px rgba(141,93,50,0.18);
-}
 .dice-window{
   display:grid;
   grid-template-columns:repeat(2, 1fr);
@@ -264,48 +214,6 @@ img{max-width:100%; display:block; border-radius:10px}
   font-weight:800;
   color:var(--heading);
   box-shadow:0 12px 24px rgba(141,93,50,0.18);
-}
-.pick-grid{
-  display:grid;
-  grid-template-columns:repeat(3, minmax(0,1fr));
-  gap:0.7rem;
-  margin:1rem 0 0.6rem;
-}
-.pick-card{
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:1rem 0.6rem;
-  min-height:88px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:1.8rem;
-  font-weight:700;
-  color:var(--heading);
-  cursor:pointer;
-  background:linear-gradient(150deg, rgba(201,121,59,0.14), rgba(227,168,107,0.14));
-  transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease;
-}
-.pick-card:hover{
-  transform:translateY(-2px);
-  box-shadow:0 12px 26px rgba(141,93,50,0.2);
-}
-.pick-card:disabled{
-  cursor:not-allowed;
-  opacity:0.7;
-  transform:none;
-  box-shadow:none;
-}
-.pick-card.revealed{
-  background:rgba(255,255,255,0.92);
-}
-.pick-card.win{
-  border-color:rgba(217,164,65,0.8);
-  box-shadow:0 0 0 2px rgba(217,164,65,0.25);
-}
-.pick-card.selected{
-  border-color:rgba(201,121,59,0.9);
-  box-shadow:0 0 0 2px rgba(201,121,59,0.3);
 }
 
 .game-controls{
@@ -461,19 +369,16 @@ img{max-width:100%; display:block; border-radius:10px}
 @media (max-width: 576px){
   .site-container{width:min(1180px, 100% - 1.6rem)}
   .site-logo{width:110px}
-  .slot-reel{min-height:90px; font-size:2.4rem}
   .dice-face{min-height:90px; font-size:2.4rem}
-  .pick-grid{grid-template-columns:repeat(2, minmax(0,1fr))}
 }
   </style>
 </head>
 <body class="page-shell">
 
-<!-- Header / navigation -->
 <nav class="navbar navbar-expand-lg site-nav">
   <div class="site-container d-flex align-items-center justify-content-between">
     <a class="navbar-brand site-brand" href="/">
-      <img class="site-logo" src="../assets/img.png" alt="suomitopgames logo">
+      <img class="site-logo" src="../../assets/img.png" alt="suomitopgames logo">
       <span class="screen-reader-only">suomitopgames</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -497,74 +402,48 @@ img{max-width:100%; display:block; border-radius:10px}
   <section class="play-section">
     <div class="site-container">
       <div class="play-header">
-        <h1 class="section-title text-center">Choose a game</h1>
-        <p class="section-subtitle text-center">Each game has its own page and its own virtual credits bank. No cash value or prizes. No in-app purchases.</p>
+        <a class="back-link" href="/play"><i class="fa-solid fa-arrow-left"></i> All games</a>
+        <h1 class="section-title text-center">Aurora Dice</h1>
+        <p class="section-subtitle text-center">Roll two dice, chase doubles, and aim for higher totals. Virtual credits only with no cash value or prizes. No in-app purchases.</p>
       </div>
 
-      <div class="game-gallery">
-        <article class="game-card preview">
-          <div class="game-header">
-            <h2 class="section-title text-center">Red Spin</h2>
-            <p class="section-subtitle text-center">Slot play with clear symbols and short rounds.</p>
-          </div>
-          <div class="game-meta">
-            <span class="game-tag">Slot</span>
-            <span class="game-tag">3 reels</span>
-            <span class="game-tag">Virtual credits</span>
-          </div>
-          <ul class="payout-list">
-            <li>Adjustable bets</li>
-            <li>Short spins</li>
-            <li>Short rounds</li>
-          </ul>
-          <a class="site-btn-primary" href="/play/red-spin">Play Red Spin</a>
-        </article>
+      <div class="game-card">
+        <div class="scoreboard">
+          <div class="score-item">Virtual credits<span id="diceCreditsDisplay">850</span></div>
+          <div class="score-item">Credits per roll<span id="diceBetDisplay">15</span></div>
+        </div>
 
-        <article class="game-card preview">
-          <div class="game-header">
-            <h2 class="section-title text-center">Aurora Dice</h2>
-            <p class="section-subtitle text-center">Roll for doubles and push for higher totals in short bursts.</p>
-          </div>
-          <div class="game-meta">
-            <span class="game-tag">Dice</span>
-            <span class="game-tag">Best of two</span>
-            <span class="game-tag">Virtual credits</span>
-          </div>
-          <ul class="payout-list">
-            <li>Doubles bonus</li>
-            <li>High-total wins</li>
-            <li>Short rolls</li>
-          </ul>
-          <a class="site-btn-primary" href="/play/aurora-dice">Play Aurora Dice</a>
-        </article>
+        <div class="dice-window" aria-live="polite">
+          <div class="dice-face" id="dice1">⚀</div>
+          <div class="dice-face" id="dice2">⚄</div>
+        </div>
 
-        <article class="game-card preview">
-          <div class="game-header">
-            <h2 class="section-title text-center">Mystery Picks</h2>
-            <p class="section-subtitle text-center">Pick a crate and reveal a surprise multiplier.</p>
+        <div class="game-controls">
+          <div class="bet-control">
+            <label for="diceBetRange">Credits per roll (virtual)</label>
+            <input type="range" id="diceBetRange" min="10" max="80" step="5" value="15" aria-label="Credits per roll">
           </div>
-          <div class="game-meta">
-            <span class="game-tag">Pick &amp; reveal</span>
-            <span class="game-tag">1 tap</span>
-            <span class="game-tag">Virtual credits</span>
-          </div>
-          <ul class="payout-list">
-            <li>Hidden rewards</li>
-            <li>One pick per round</li>
-            <li>Clear results</li>
-          </ul>
-          <a class="site-btn-primary" href="/play/mystery-picks">Play Mystery Picks</a>
-        </article>
+          <button id="diceRollButton" class="site-btn-primary" type="button">
+            <i class="fa-solid fa-dice"></i> Roll
+          </button>
+        </div>
+
+        <p id="diceStatus" class="game-status" aria-live="polite">Roll the dice. Virtual credits only.</p>
+        <ul class="payout-list">
+          <li>Doubles = 5x credits</li>
+          <li>Total 10-12 = 3x credits</li>
+          <li>Total 7-9 = 2x credits</li>
+          <li>Total 2-6 = no win</li>
+        </ul>
       </div>
     </div>
   </section>
 </main>
 
-<!-- Footer -->
 <footer class="site-footer">
   <div class="site-container">
     <div class="footer-brand">
-      <img class="site-logo" src="../assets/img.png" alt="suomitopgames logo">
+      <img class="site-logo" src="../../assets/img.png" alt="suomitopgames logo">
       <span class="screen-reader-only">suomitopgames</span>
     </div>
 
@@ -591,12 +470,102 @@ img{max-width:100%; display:block; border-radius:10px}
 
 <!-- Bootstrap UI helpers -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Game logic: Aurora Dice (virtual credits only) -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Aurora Dice: virtual credits only, no cash value.
+    const diceCreditsDisplay = document.getElementById("diceCreditsDisplay");
+    const diceBetDisplay = document.getElementById("diceBetDisplay");
+    const diceBetRange = document.getElementById("diceBetRange");
+    const diceStatus = document.getElementById("diceStatus");
+    const diceRollButton = document.getElementById("diceRollButton");
+    const dice1 = document.getElementById("dice1");
+    const dice2 = document.getElementById("dice2");
+
+    if (!diceCreditsDisplay || !diceBetDisplay || !diceBetRange || !diceStatus || !diceRollButton || !dice1 || !dice2) {
+      return;
+    }
+
+    // Local credit bank for this game only.
+    let diceCredits = 850;
+    let diceRolling = false;
+    const diceFaces = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
+
+    const formatNumber = (value) => value.toLocaleString();
+
+    // Keep the UI in sync with credits and bet.
+    const syncDiceUI = () => {
+      diceCreditsDisplay.textContent = formatNumber(diceCredits);
+      diceBetDisplay.textContent = diceBetRange.value;
+      diceRollButton.disabled = diceRolling || diceCredits < Number(diceBetRange.value);
+    };
+
+    // Roll a die (1-6).
+    const rollValue = () => Math.floor(Math.random() * 6) + 1;
+
+    // Payout rules: doubles > high totals > mid totals.
+    const calculateDiceWin = (first, second, bet) => {
+      if (first === second) return bet * 5;
+      const total = first + second;
+      if (total >= 10) return bet * 3;
+      if (total >= 7) return bet * 2;
+      return 0;
+    };
+
+    // Brief roll animation before showing results.
+    const animateDice = (first, second) => {
+      const cycles = 10;
+      let tick = 0;
+      const timer = setInterval(() => {
+        dice1.textContent = diceFaces[Math.floor(Math.random() * diceFaces.length)];
+        dice2.textContent = diceFaces[Math.floor(Math.random() * diceFaces.length)];
+        tick += 1;
+        if (tick >= cycles) {
+          clearInterval(timer);
+          dice1.textContent = diceFaces[first - 1];
+          dice2.textContent = diceFaces[second - 1];
+        }
+      }, 60);
+    };
+
+    // Roll handler: deduct bet, animate, apply payout.
+    const rollDice = () => {
+      if (diceRolling) return;
+      const bet = Number(diceBetRange.value);
+      if (bet > diceCredits) {
+        diceStatus.textContent = "Not enough credits — lower your credits per roll.";
+        return;
+      }
+
+      diceRolling = true;
+      diceCredits -= bet;
+      diceRollButton.disabled = true;
+      diceStatus.textContent = "Rolling...";
+      syncDiceUI();
+
+      const first = rollValue();
+      const second = rollValue();
+      animateDice(first, second);
+
+      setTimeout(() => {
+        const win = calculateDiceWin(first, second, bet);
+        diceCredits += win;
+        const total = first + second;
+        const message = win > 0
+          ? `Win! Total ${total}. You earned ${formatNumber(win)} virtual credits.`
+          : `Total ${total}. No win this roll.`;
+        diceStatus.textContent = `${message} Virtual credits only.`;
+        diceRolling = false;
+        syncDiceUI();
+      }, 750);
+    };
+
+    diceBetRange.addEventListener("input", syncDiceUI);
+    diceRollButton.addEventListener("click", rollDice);
+    syncDiceUI();
+  });
+</script>
 <!-- Site utilities: scroll-to-top + footer year -->
-<script src="../assets/main.js" defer></script>
+<script src="../../assets/main.js" defer></script>
 </body>
 </html>
-
-
-
-
-
